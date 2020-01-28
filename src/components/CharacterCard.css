@@ -1,0 +1,31 @@
+.whole-page{
+    display: flex;
+    flex-direction: column;
+    
+}
+.element-list{
+    width: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex; 
+    flex-wrap: wrap;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* im{
+    width: 90%;
+    height: 60px;
+
+} */
+p{
+    width: 98%;
+    height: fit-content;
+    margin: 3px;
+    /* color: white; */
+}
+.test{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
