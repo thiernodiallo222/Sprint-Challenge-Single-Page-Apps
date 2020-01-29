@@ -7,11 +7,10 @@ import "./components/CharacterCard.css";
 
 export default function App() {
   return (
-    <main className = "whole-page">
-      <Header />
-      <div className ='test'>
-  <CharacterList />
-      </div>
+    <main>
+      
+  <Header />  
+  <CharacterList />   
       
     </main>
   );

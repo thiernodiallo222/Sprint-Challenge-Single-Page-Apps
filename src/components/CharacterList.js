@@ -33,11 +33,11 @@ export default function CharacterList() {
   // console.log(`element object after useEffect ${character}`);
 
   return (
-    <section >
+    <section className ='all-cards'>
 
       {
         character.map((element, index) =>
-          <div className="element-list">
+          <div className="single-card">
 <CharacterCard
         
       index ={element.index}
