@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CharacterCard from './CharacterCard';
 import axios from 'axios';
 import "./CharacterCard.css";
+import Card from "react-bootstrap/Card";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -38,21 +39,28 @@ export default function CharacterList() {
     <section className ='all-cards'>
 
       {
-        character.map(element =>
-          <div className="single-card">
+        character.map((element, index)=>
+          // <div  key ={index} className="single-card">
+          <Card key={index}>
 <CharacterCard
-        
-      index ={element.id}
       image={element.image}
       name={element.name}
       type={element.type}
       gender={element.gender}
       species={element.species}
                            
-      />  </div>)
+      /> </Card>)
      }
          
           
     </section>
   );
 }
+
+
+
+  // <Card style={{ width: '18rem' }}>
+  // <Card.Img variant="top" src="holder.js/100px180" />
+  // <Card.Body>
+  // <Card.Title>Card Title</Card.Title>
+  // <Card.Text></Card.Text>

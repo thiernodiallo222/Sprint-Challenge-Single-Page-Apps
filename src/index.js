@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App";
 import WelcomePage from "./components/WelcomePage";
 import CharacterList from "./components/CharacterList";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { styled } from "styled-components";
 
 
