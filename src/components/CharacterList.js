@@ -40,7 +40,7 @@ export default function CharacterList() {
 
       {
         character.map((element, index)=>
-          // <div  key ={index} className="single-card">
+
           <Card key={index}>
 <CharacterCard
       image={element.image}
@@ -58,9 +58,3 @@ export default function CharacterList() {
 }
 
 
-
-  // <Card style={{ width: '18rem' }}>
-  // <Card.Img variant="top" src="holder.js/100px180" />
-  // <Card.Body>
-  // <Card.Title>Card Title</Card.Title>
-  // <Card.Text></Card.Text>
