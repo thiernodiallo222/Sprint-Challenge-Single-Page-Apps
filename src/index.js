@@ -24,7 +24,7 @@ ReactDOM.render(
               <Link exact to="/"> Home </Link>
             </li>
             <li>
-              <Link to="/character">Character</Link>
+              <Link exact to="/character">Characters</Link>
             </li>
           </ul>
         </nav>
