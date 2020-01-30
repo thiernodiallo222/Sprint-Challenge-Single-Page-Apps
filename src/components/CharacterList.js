@@ -15,13 +15,15 @@ export default function CharacterList() {
     // axios.get('https://developers.google.com/web/tools/chrome-devtools/network/reference')
     // axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
     // axios.get("https://api.github.com/users/thiernodiallo222")
-        axios.get("https://api.github.com/users/thiernodiallo222/followers")
+    axios.get("https://rickandmortyapi.com/api/character")
+    // axios.get("https://api.github.com/users/thiernodiallo222/followers")
+          
  
             .then(res => {
 
-                console.log(res.data); // displaying data to check its structure
+                console.log(res.data.results); // displaying data to check its structure
 
-                setCharacter(res.data);
+                setCharacter(res.data.results);
 
                 // set the state of the photo
     
@@ -36,17 +38,16 @@ export default function CharacterList() {
     <section className ='all-cards'>
 
       {
-        character.map((element, index) =>
+        character.map(element =>
           <div className="single-card">
 <CharacterCard
         
-      index ={element.index}
-       avatar_url={element.avatar_url}
-      login={element.login}
+      index ={element.id}
+      image={element.image}
+      name={element.name}
       type={element.type}
-      followers_url={element.followers_url}
-      following_url={element.following_url}
-      repos_url={element.repos_url}
+      gender={element.gender}
+      species={element.species}
                            
       />  </div>)
      }
