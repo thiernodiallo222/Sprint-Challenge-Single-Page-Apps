@@ -25,7 +25,10 @@ In this challenge, you will create a Single Page Application complete with Clien
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
-- [ ]  Explain benefit(s) using `client-side routing`?
+- [ ]  Explain benefit(s) of  using `client-side routing`?
+
+Answer: 
+Routing is the mechanism by which requests are connected to code. Client side routing is the mechanism of internally handling the route using loaded javascript. Some benefits of server side routing is that it is faster for less data is processed. Also it is allows smooth transtions and annimations between views and are easier to implement.   
 
 > Answer:
 
